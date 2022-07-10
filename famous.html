@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Evocation - Historical Places</title>
+
+<style>
+
+body {
+	background-image: url("img/dark-texture.jpg");
+	margin: 10px 10px 10px 10px;
+	background-size: cover;
+	background-attachment: fixed;	
+}
+
+.header {
+
+	font-family: ink free;
+	overflow: hidden;
+	background-color: black;
+	margin-top:10px;
+	border-radius:8px;
+	padding: 20px 8%;
+}
+
+.header a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 12px;
+	margin:0 5px 0 5px;
+	text-decoration: none;
+	font-size: 25px; 
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+.header a.logo {
+	font-size: 50px;
+	color: black;
+	background-color: #ddd;
+	font-weight: bold;
+}
+
+.header a.logo:hover {
+	font-size: 55px;
+	color: #f1f1f1;
+	background-color: #333;
+
+}
+
+.header a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.header a.active {
+	background-color: orange;
+	color: white;
+}
+
+.header-right {
+	float: right;
+}
+
+@media screen and (max-width: 500px) {
+
+  .header a {
+  	float: none;
+  	display: block;
+  	text-align: left;
+  }
+  
+  .header-right {
+  	float: none;
+  }
+}
+
+/*
+.header2{
+	padding: 10px;
+  	text-align: center;
+ 	background: grey;
+  	color: white;
+  	font-size: 22px;
+}*/
+
+.menubox{
+	border: 1px solid transparent;
+	width: 100%;
+	height: 70px;
+	background-color: black;
+	opacity: 0.8;
+}
+
+.footer{
+	padding: 10px;
+  	text-align: center;
+ 	background: black;
+	opacity: 0.7;
+  	color: white;
+  	font-size: 20px;
+	width: 100%;
+	height: 100px;
+}
+
+p.heading1 {
+	border: 3px solid white;
+	background-color: grey;
+	font-size: 40px;
+	text-align: center;
+	border-radius: 25px 0px 25px 0px;
+}
+
+p.heading2 {
+	font-style: Comic Sans MS;                    /*error*/
+	text-decoration: underline;
+	font-size: 35px;
+	text-align: center;
+	color: white;
+	}
+
+p.heading3 {
+	font-style: Comic Sans MS;                    /*error*/
+	text-decoration: underline;
+	font-size: 35px;
+	text-align: center;
+	color: yellow;
+}
+
+p.menudetails {
+	margin-left: 190px;
+	font-size: 21px;
+	color: white;
+	}
+
+.menunames1 {
+	float: left;
+	border: 1px solid transparent;
+	height: 130px;
+	width: 440px;
+}
+
+.menuimage{
+	margin:10px;
+	float:left;
+	}
+
+img.dish {
+	width: 150px; 
+	height: 110px;
+	border: 1px solid white;
+	border-radius: 25px 0px 25px 0px;
+}
+
+img.dish:hover {
+	border: 4px solid white;
+}
+
+
+.box1 {
+	border: 1px solid white;
+	height: 2400px;                                       
+	width: 1100px;
+	margin-left: 70px;
+	padding: 40px;
+}
+
+.box2 {
+	border: 1px solid white;
+	height: 500px;
+	width: 900px;
+	margin-left: 60px;
+	padding: 40px;
+	border-radius: 25px 25px 25px 25px;
+}
+
+.box3 {
+	border: 1px solid white;
+	height: 900px;
+	width: 900px;
+	margin-left: 60px;
+	padding: 40px;
+	border-radius: 25px 25px 25px 25px;
+}
+
+div.fixed {
+    	font-size: 20px;
+    	position: fixed;
+    	bottom: 30px;
+    	right: 60px;
+    	width: 100px;
+	height:55px;
+    	border: 3px solid white;
+	opacity: 0.5;
+	border-radius: 25px 0px 25px 0px;
+	text-align: center;
+}
+
+div.fixed:hover {
+	border: 4px solid white;		
+}
+
+
+</style>
+</head>
+
+<body>
+
+<br>
+<br><hr>
+	<div class="header">
+		<a href="index.html" class="logo">Evo<span style="color:orange;">cation</span></a>
+		<div class="header-right">
+			<a href="index.html">Home</a>
+			<a class="active" href="menuPage.html">places</a>
+			<a href="aboutUs.html">About</a>
+			<a href="feedback.html">Feedback</a>
+			<a href="login.html">Login</a>
+		</div>
+	</div>
+
+
+	<hr><br>
+
+	<div class="box1">
+		<p class="heading1">Historical Places</p>
+		
+		
+		<div class="box3">
+
+			<div class="menunames1">
+				<div class="menuimage">
+				<img class="dish" src="img/dessert/tajmahal.jpg" >
+				</div>
+			<p class="menudetails">Taj Mahal</p>
+			<p class="menudetails">Agra</p>
+			</div>
+
+			<div class="menunames1">
+				<div class="menuimage">
+				<img class="dish" src="img/dessert/qutub.jpg" >
+				</div>
+			<p class="menudetails">Qutab Minar</p>
+			<p class="menudetails">New Delhi</p>
+			</div>
+
+			<div class="menunames1">
+				<div class="menuimage">
+				<img class="dish" src="img/dessert/c.jpg" >
+				</div>
+			<p class="menudetails">Konarak sun temple</p>
+			<p class="menudetails">Odisha</p>
+			</div>
+		
+			<div class="menunames1">
+				<div class="menuimage">
+				<img class="dish" src="img/dessert/d.jpg" >
+				</div>
+			<p class="menudetails">Gateway of India</p>
+			<p class="menudetails">Mumbai</p>
+			</div>
+
+			<div class="menunames1">
+				<div class="menuimage">
+				<img class="dish" src="img/dessert/e.jpg" >
+				</div>
+			<p class="menudetails">Ajanta Caves</p>
+			<p class="menudetails">Maharastra</p>
+			</div>
+
+			<div class="menunames1">
+				<div class="menuimage">
+				<img class="dish" src="img/dessert/f.jpg" >
+				</div>
+			<p class="menudetails">Iron Pillar</p>
+			<p class="menudetails">Delhi</p>
+			</div>
+
+			<div class="menunames1">
+				<div class="menuimage">
+				<img class="dish" src="img/dessert/g.jpg" >
+				</div>
+			<p class="menudetails">Raj ghat</p>
+			<p class="menudetails">Delhi</p>
+			</div>
+			
+			<div class="menunames1">
+				<div class="menuimage">
+				<img class="dish" src="img/dessert/h.jpg" >
+				</div>
+			<p class="menudetails">Khusro Bagh</p>
+			<p class="menudetails">Rajasthan</p>
+			</div>
+
+			<div class="menunames1">
+				<div class="menuimage">
+				<img class="dish" src="img/dessert/i.jpg" >
+				</div>
+			<p class="menudetails">Gandikota</p>
+			<p class="menudetails">Andhra pradesh</p>
+			</div>
+
+			<div class="menunames1">
+				<div class="menuimage">
+				<img class="dish" src="img/dessert/j.jpg" >
+				</div>
+			<p class="menudetails">Charminar</p>
+			<p class="menudetails">Telangana</p>
+			</div>
+
+			<div class="menunames1">
+				<div class="menuimage">
+				<img class="dish" src="img/dessert/k.jpg" >
+				</div>
+			<p class="menudetails">Kanchi Mahal</p>
+			<p class="menudetails">Agra</p>
+			</div>
+
+			<div class="menunames1">
+				<div class="menuimage">
+				<img class="dish" src="img/dessert/l.jpg" >
+				</div>
+			<p class="menudetails">Delhi Gate</p>
+			<p class="menudetails">Delhi</p>
+			</div>	</div>
+	
+
+
+
+</body>
+</html>
+
+

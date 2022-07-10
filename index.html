@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Evocation - deserts</title>
+</head>
+
+<style>
+
+body {
+	margin: 0 0 0 0;
+}
+
+.header {
+
+	font-family: ink free;
+	overflow: hidden;
+	background-color: black;
+	margin-top:10px;
+	border-radius:8px;
+	padding: 20px 8%;
+}
+
+.header a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 12px;
+	margin:0 5px 0 5px;
+	text-decoration: none;
+	font-size: 25px; 
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+.header a.logo {
+	font-size: 50px;
+	color: black;
+	background-color: #ddd;
+	font-weight: bold;
+}
+
+.header a.logo:hover {
+	font-size: 55px;
+	color: #f1f1f1;
+	background-color: #333;
+
+}
+
+.header a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.header a.active {
+	background-color: orange;
+	color: white;
+}
+
+.header-right {
+	float: right;
+}
+
+@media screen and (max-width: 500px) {
+
+  .header a {
+  	float: none;
+  	display: block;
+  	text-align: left;
+  }
+  
+  .header-right {
+  	float: none;
+  }
+}
+
+@media screen and (max-width: 778px) {
+
+  .responsive {
+	width: 100%;
+	height: auto;
+  }
+}
+
+.float-r {
+	float: right;
+	padding: 40px;
+}
+
+.clearfix {
+	overflow: auto;
+	
+}
+.clearfix2 {
+	overflow: auto;
+	margin: 10px 20px 0px 20px;
+	background-color: #f1f1f1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+	float: left;
+	width: 30%;
+	margin: 1.5% 0% 1.5% 2.5%;
+	padding: 5px;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+p.one {
+	font-size: 20px;
+	margin-left: 2.5%;
+}
+
+p.two {
+	font-size: 50px;
+	font-family: century gothic;
+	color: #365;
+	text-decoration: underline;
+	margin-left: 30px;
+}
+
+p.three {
+	font-size: 25px;
+	font-family: century gothic;
+	margin-left: 30px;
+}
+
+.footer {
+	padding: 10px;
+	margin: 20px;
+  	text-align: center;
+ 	background: black;
+	border-radius: 5px;
+	opacity: 0.9;
+  	color: white;
+  	font-size: 20px;
+	height: 120px;
+}
+
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .1} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .1} 
+	to {opacity: 1}
+}
+
+
+</style>
+
+
+
+
+
+
+<body>
+
+	<div class="header">
+		<a href="index.html" class="logo">Evo<span style="color:orange;">cation</span></a>
+		<div class="header-right">
+			<a class="active" href="index.html">Home</a>
+			<a href="menuPage.html">places</a>
+			<a href="aboutUs.html">About</a>
+			<a href="feedback.html">Feedback</a>
+			<a href="login.html">Login</a>
+		</div>
+	</div>
+
+
+<img class="fade" src="img/home/Cover1.jpg" alt="HomeImage" width="100%" height="auto">
+
+<br><br><br>
+
+
+
+<p class="one">
+	<strong style="font-family:courier new; font-size:25px;">Cultures and heritages</strong>
+	<br>
+	culture is based on what the people create whereas the heritage is what the people inherit by nature, by history, by culture!
+</p>
+
+
+<div class="clearfix">
+
+	<div class="img-container">
+		<img src="img/home/ap.jpg" alt="Andhra Pradesh" style="width:100%">
+
+		<p><strong>ANDHRA PRADESH</strong><br />
+		border: 1px solid black;
+  
+
+		The culture of Andhra Pradesh is an integral part of the rich cultural heritage of the country. The art and crafts of the region like Kalamkari, Bidri, the fabulous weaving of Gadwal and Venkatagiri, the exclusive metal ware, brass, stone and wood carving highlight the immense talent of the Andhra craftsmen.
+		</p>
+	</div>
+
+	<div class="img-container">
+		<img src="img/home/kerala.jpg" alt="Kerala" style="width:100%">
+
+		<p><strong>KERALA</strong><br />
+		Hinduism and Islam are the two major religions of Kerala. More than 50% of people in Kerala follow Hinduism, and more than 25% follow Islam. Around 20% are Christians, and others follow Buddhism, Jainism, Judaism and other religions. The cultural diversity of Kerala is well known.
+		</p>
+	</div>
+
+	<div class="img-container">
+		<img src="img/home/ts.jpg" alt="Telangana" style="width:100%">
+
+		<p><strong>TELANGANA</strong><br />
+		The Culture of Telangana in India has a cultural history of about 5,000 years. The region emerged as the foremost centre of culture in Indian subcontinent during the rule of Kakatiya, the Qutb Shahi and Asaf Jahi dynasties— (also known as the Nizams of Hyderabad). The rulers patronage and interest for culinery, arts and culture transformed Telangana into a multi-cultural region where two different cultures coexist together
+		</p>
+  	</div>
+</div>
+
+
+<div class="clearfix">
+
+	<div class="img-container">
+  		<img src="img/home/Maharastra.jpg" alt="Maharastra" style="width:100%">
+
+		<p><strong>MAHARASTRA</strong><br />
+		Maharashtra is the third largest state of India. It has a long history of Marathi saints of Varakari religious movement, such as Dnyaneshwar, Namdev, Chokhamela, Eknath and Tukaram which forms the one of bases of the culture of Maharashtra or Marathi culture.Maharashtra had huge influence over India under the 17th-century king Chatrapati Shivaji Maharaj of the Maratha Empire and his concept of Hindavi Swarajya which translates to self-rule of people.
+		</p>
+  	</div>
+
+  	<div class="img-container">
+  		<img src="img/home/rajasthan.jpg" alt="Rajasthan" style="width:100%">
+
+		<p><strong>RAJASTHAN</strong><br />
+		Rajasthan is famous for textiles, semi-precious stones and handicrafts, and for its traditional and colorful art. Rajasthani furniture has intricate carvings and bright colours. Block prints, tie and dye prints, Bagaru prints, Sanganer prints and Zari embroidery are major export products from Rajasthan.
+  		</p>
+  	</div>
+
+  	<div class="img-container">
+  		<img src="img/home/goa.jpg" alt="Goa" style="width:100%">
+
+		<p><strong>GOA</strong><br />
+		A civilization of warm, happy people, Goa sees a mix of different religions like Christians, Catholics, Muslims, and Hindus that live together in harmony. Following their age-old traditions and customs, Goan's celebrate all major festivals with fervour without bringing any religious barriers within the society.
+  		</p>
+  	</div>
+</div>
+
+
+
+
+
+<br><br>
+
+<div class="clearfix2">
+	<div class="float-r">
+		<img class="responsive" src="img/home/cul.jpg" width="460px" height="300px">
+	</div>
+	<p class="two">Indian Culture</p>
+	<p class="three">
+		Indian culture is the heritage of social norms, ethical values, traditional customs, belief systems, political systems, artifacts and technologies that originated in or are associated with the ethno-linguistically diverse Indian subcontinent. The term also applies beyond India to countries and cultures whose histories are strongly connected to India by immigration, colonization, or influence, particularly in South Asia and Southeast Asia. India's languages, religions, dance, music, architecture, food and customs differ from place to place within the country.
+
+        Indian culture, often labelled as a combination of several cultures, has been influenced by a history that is several millennia old, beginning with the Indus Valley Civilization and other early cultural areas. Many elements of Indian culture, such as Indian religions, mathematics, philosophy, cuisine, languages, dance, music and movies have had a profound impact across the Indosphere, Greater India and the world.
+		<br><br>
+	</p>
+</div>
+
+
+<br><br>
+
+
+<div class="clearfix2" style="background-color: rgba(220,175,172, 0.2);">
+	<div class="float-r">
+		<img class="responsive" src="img/home/maxresdefault.jpg" width="480px" height="300px">
+	</div>
+	<p class="two">Heritage</p>
+	<p class="three">
+		The rich heritage of India, one of the world’s oldest civilizations, is an all-embracing confluence of religions, traditions and customs. The highlights of Indian heritage lie in the treasure of its art, architecture, classical dance, music, flora and fauna, and the innate secular philosophy of its people. A visit to the heritage sites is like a walk through history, changing lanes with every dynasty that ruled Indian soils. The finesse of Indian handiwork, the richness of silk and cotton textiles, the ethnicity of jewellery, everything has come down as a heritage from ancient times and is being kept alive generation after generation. Even food in India is a legacy and part of Indian heritage, differing in look and taste in every state of India.
+		<br><br>
+	</p>
+</div>
+
+
+<br><br>
+
+
+
+
+
+
+
+
+<br><br><br>
+<div class="footer">
+	<p>Evocation - Culture and Heritage</p>
+</div>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

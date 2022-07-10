@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Evocation - OUR INDIA</title>
+
+<style>
+/*Slide show on top*/
+.mySlides {display: none}
+
+img {vertical-align: middle;}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 25%;
+	width: auto;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+	right:0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 700px) {
+	.prev, .next {
+		font-size: 12px; 
+		top: 45px;
+	}
+}
+
+
+
+
+body {
+	/*background-image: url("light-abstract-background.jpg");*/
+	margin: 20px 20px 20px 20px;
+	background-size: cover;
+	background-attachment: fixed;
+       }
+
+.header {
+
+	font-family: ink free;
+	overflow: hidden;
+	background-color: black;
+	margin-top:10px;
+	border-radius:8px;
+	padding: 20px 8%;
+	
+}
+
+.header a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 12px;
+	margin:0 5px 0 5px;
+	text-decoration: none;
+	font-size: 25px; 
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+.header a.logo {
+	font-size: 50px;
+	color: black;
+	background-color: #ddd;
+	font-weight: bold;
+}
+
+.header a.logo:hover {
+	font-size: 55px;
+	color: #f1f1f1;
+	background-color: #333;
+
+}
+
+.header a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.header a.active {
+	background-color: orange;
+	color: white;
+}
+
+.header-right {
+	float: right;
+}
+
+@media screen and (max-width: 500px) {
+
+  .header a {
+  	float: none;
+  	display: block;
+  	text-align: left;
+  }
+  
+  .header-right {
+  	float: none;
+  }
+ .responsive {
+	width: 100%;
+	height: auto;
+  }
+
+
+}
+
+.footer {
+	padding: 10px;
+  	text-align: center;
+ 	background: black;
+	opacity: 0.7;
+  	color: white;
+  	font-size: 20px;
+	width: 100%;
+	height: 100px;
+}
+
+
+
+
+
+button {
+	color: gold;
+	font-size: 30px;
+	font-family: ink free;
+	background-color: black;
+	padding: 10px;
+	text-align:center;
+}
+
+button:hover {
+	border: 5px solid grey;
+}
+
+
+.box {border:1px solid black;
+	box-shadow:5px 10px #888888;
+	padding:20%;
+	
+}
+.img-container {
+
+	width: 30%;
+	margin: 1.5% 0% 1.5% 2.5%;
+	padding: 3px;
+}
+
+
+.clearfix {
+	overflow: auto;
+	/*background-color: #f1f1f1;*/
+	margin:10px;
+}
+.float-l {
+	float: left;
+	padding:40px;
+}
+
+
+.myf{font-size:50;
+	font-family:Georgia;
+	padding:10px;}
+
+
+
+</style>
+</head>
+
+<body>
+
+
+
+
+<script>
+var slideIndex = 0;
+autoshowSlides();
+
+function autoshowSlides() {
+	var j;
+	var slides = document.getElementsByClassName("mySlides");
+	for (j = 0; j < slides.length; j++) {
+		slides[j].style.display = "none";  
+	}
+	slideIndex++;
+	if (slideIndex > slides.length) {slideIndex = 1}    
+
+	slides[slideIndex-1].style.display = "block";  
+	setTimeout(autoshowSlides, 5000); // Change image every 5 seconds
+}
+</script>
+
+
+
+<script>
+showSlides(slideIndex);
+
+function plusSlides(n) {
+	showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+	showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("dot");
+	if (n > slides.length) {slideIndex = 1}    
+	if (n < 1) {slideIndex = slides.length}
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+  }
+
+	slides[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+<br>
+<center>
+<br><hr>
+	<div class="header">
+		<a href="index.html" class="logo">Evo<span style="color:orange;">cation</span></a>
+		<div class="header-right">
+			<a href="index.html">Home</a>
+			<a class="active" href="menuPage.html">places</a>
+			<a href="aboutUs.html">About</a>
+			<a href="feedback.html">Feedback</a>
+			<a href="login.html">Login</a>
+		</div>
+	</div>
+<br><hr><br>
+			<div class="clearfix">
+  				<div class="float-l">
+						<img class="responsive" src="historical.jpg" width="460px" height="300px">
+   				</div>
+				<br><br>
+						<center><p><div class="myf">The historical places in India depict the stunning craftsmanship on the stone which can be seen in many temples and forts. The Taj Mahal, Red Fort, Humayun's Tomb are famous historical monuments of the Mughal period. Champaner, Dholavira and Nalanda are ancient archaeological sites. Glimpses of colonial architecture can be seen in cities such as Goa, Kolkata and Pondicherry. The Great Living Chola Temples are another example of India's rich history. Konark, Mysore, Orchha, Hyderabad, Bijapur and Lucknow are few other cities that are of historical significance.</div></p></center>	
+                          <br>
+    				<form action="famous.html" method="get" target="_blank">
+         					<button type="submit">HISTORICAL PLACES</button>
+     				</form>
+	
+			</div>
+  			<div class="clearfix">
+  				<div class="float-l">
+						<img class="responsive" src="temple.jpg" width="460px" height="300px">
+   				</div>
+				<br><br>
+						<center><p><div class="myf">India being part of the worlds oldest civilizations is a land of rich history, countless beliefs, traditions and legends surrounding the religions. India takes pride in the countrys rich cultural and religious history as it is the birth land of the traditions of Hinduism, Jainism, Buddhism and Sikhism. India is a land where people of different religious beliefs live in harmony and brotherhood. Hinduism is believed to be the world’s oldest religion. Unlike other religions, Hinduism does not have a founder but is instead a fusion of religions. </div></p></center>
+
+ </p>
+    				<form action="house-of-worship.html" method="get" target="_blank">
+         					<button type="submit">TEMPLES<chocolate, and strawberry ice cream side by side in/button>
+				</form>
+
+	
+			</div>
+  			  			
+	
+
+	
+			<div class="clearfix">
+  				<div class="float-l">
+						<img class="responsive" src="monumens.jpg" width="460px" height="300px">
+   				</div>
+				<br><br>
+						<center><p><div class="myf">India is one of the most beautiful countries in the world and is best known for its colourful culture and fascinating heritage. Its grand monuments, like the Taj Mahal act as strong pillars of the rich and deep history that India possesses. From their splendid architecture to a strong legacy, the historical monuments of India speak volumes. Most of these Indian monuments were primarily built under the regime of Rajputana, Dravidian and Mughal emperors. The monuments of India are speaking stones of the glory of its rulers and the brilliance of artisans in ancient India. Due to the incredible beauty of India and the constant efforts of the government in maintaining the heritage sites, India tourism has flourished rapidly witnessing an increase in the number of travellers from all around the world. Some of the well-preserved monuments in the different parts of the country are Red Fort (North), Sun Temple Konark (East), Amer Fort (West) and Charminar (South).</div></p></center>
+    				<form action="monuments.html" method="get" target="_blank">
+         					<button type="submit">MONUMENTS</button>
+				</form>
+			</div>
+  			
+
+
+			
+
+
+
+
+
+
+
+
+
+<br><br>
+<div class="footer">
+	<p>Evocation -Culture and Heritage</p>
+</div>
+
+
+
+
+
+
+</body>
+</html>
+
+<!--<form action="northmenu.html" method="get" target="_blank">
+         <button type="submit">famous</button>
+</form>
+
+<form action="southernmenu.html" method="get" target="_blank">
+         <button type="submit">house-of-worship</button>
+</form>
+
+<form action="monuments.html" method="get" target="_blank">
+         <button type="submit">monuments</button>
+</form>-->
